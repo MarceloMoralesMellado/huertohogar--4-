@@ -1,0 +1,107 @@
+/* Estilos específicos para la sección del blog */
+
+/* Sección Hero */
+.blog-hero {
+    background: linear-gradient(135deg, #f8fdf8 0%, #e8f5f3 100%);
+    padding: 120px 0 80px;
+}
+
+.blog-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d5a27;
+    margin-bottom: 1rem;
+}
+
+.blog-hero-subtitle {
+    font-size: 1.125rem;
+    color: #4a5568;
+}
+
+/* Sección de Entradas del Blog */
+.blog-section {
+    padding: 80px 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Tarjeta de Entrada del Blog */
+.blog-post-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.blog-post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-post-meta {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.blog-post-meta span {
+    margin-right: 12px;
+}
+
+.blog-post-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d5a27;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.blog-post-excerpt {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.blog-post-read-more {
+    display: inline-block;
+    margin-top: 16px;
+    color: #ff7700;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .blog-hero-title {
+        font-size: 2.5rem;
+    }
+}

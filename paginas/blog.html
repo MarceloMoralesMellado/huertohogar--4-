@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - HuertoHogar: Noticias y Guías del Campo Chileno</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    
+    <link rel="stylesheet" href="../css/blog.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="logo">
+                    </a>
+                </div>
+                
+              <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="productos.html" class="nav-link">Productos</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="pedidos.html" class="nav-link">Mis Pedidos</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" id="cartBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 21h12M9 19.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 1 0-3 0Z"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="login-btn" id="loginBtn">Ingresar</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1 class="blog-hero-title">Blog HuertoHogar</h1>
+                <p class="blog-hero-subtitle">Descubre historias, consejos y noticias sobre agricultura sustentable, alimentos frescos y la pasión de nuestros agricultores chilenos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <a href="la-temporada-de-tomates.html" class="blog-post-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Noticias+del+Campo" alt="Cosecha de Tomates" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span>📅 21 de Octubre, 2024</span>
+                            <span>🌱 Cultivos</span>
+                        </div>
+                        <h3 class="blog-post-title">La Temporada de Tomates: Consejos para una Cosecha Abundante</h3>
+                        <p class="blog-post-excerpt">Exploramos los secretos detrás de una buena cosecha de tomates. Desde la preparación del suelo hasta el control de plagas, te damos todos los tips.</p>
+                        <span class="blog-post-read-more">Leer más &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="conoce-a-don-ricardo.html" class="blog-post-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Conoce+a+nuestros+productores" alt="Agricultor de manzanas" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span>📅 15 de Octubre, 2024</span>
+                            <span>🧑‍🌾 Productores</span>
+                        </div>
+                        <h3 class="blog-post-title">Historias del Campo: Conoce a Don Ricardo, el Rey de las Manzanas de Maule</h3>
+                        <p class="blog-post-excerpt">Visitamos a uno de nuestros productores estrella, Don Ricardo, quien con pasión y técnicas tradicionales cultiva las manzanas más dulces del Maule.</p>
+                        <span class="blog-post-read-more">Leer más &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="recetas-con-verduras-de-verano.html" class="blog-post-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Recetas+con+Frutas+de+Temporada" alt="Ensalada de Verano" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span>📅 08 de Octubre, 2024</span>
+                            <span>🥗 Recetas</span>
+                        </div>
+                        <h3 class="blog-post-title">5 Recetas Frescas y Saludables con Verduras de Verano</h3>
+                        <p class="blog-post-excerpt">El verano está aquí, y con él, los sabores más vibrantes. Te compartimos cinco recetas sencillas para aprovechar las verduras de temporada.</p>
+                        <span class="blog-post-read-more">Leer más &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="agricultura-sustentable.html" class="blog-post-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Sustentabilidad" alt="Agricultura Sustentable" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span>📅 01 de Octubre, 2024</span>
+                            <span>🌍 Sustentabilidad</span>
+                        </div>
+                        <h3 class="blog-post-title">Agricultura Sustentable: El Compromiso de HuertoHogar con el Planeta</h3>
+                        <p class="blog-post-excerpt">Descubre cómo trabajamos junto a nuestros productores para implementar prácticas que cuidan el medio ambiente y aseguran la calidad de nuestros productos.</p>
+                        <span class="blog-post-read-more">Leer más &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="el-auge-de-la-palta-chilena.html" class="blog-post-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Cultivo+de+Paltas" alt="Cultivo de Paltas en Chile" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span>📅 25 de Septiembre, 2024</span>
+                            <span>🌱 Cultivos</span>
+                        </div>
+                        <h3 class="blog-post-title">El Auge de la Palta Chilena: Del Huerto a tu Mesa</h3>
+                        <p class="blog-post-excerpt">La palta es un superalimento esencial. Analizamos cómo el clima y las prácticas chilenas han convertido a esta fruta en un tesoro nacional y global.</p>
+                        <span class="blog-post-read-more">Leer más &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="encuentro-en-la-feria.html" class="blog-post-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Feria+de+Agricultores" alt="Feria de Agricultores Locales" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span>📅 18 de Septiembre, 2024</span>
+                            <span>🧑‍🌾 Productores</span>
+                        </div>
+                        <h3 class="blog-post-title">Encuentro en la Feria: Celebrando a los Pequeños Productores</h3>
+                        <p class="blog-post-excerpt">Una mirada al corazón de las ferias locales, donde los agricultores de pequeña escala nos muestran la riqueza y diversidad de la tierra chilena.</p>
+                        <span class="blog-post-read-more">Leer más &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="footer-logo">
+                    <p class="footer-description">Conectando familias chilenas con productos frescos del campo desde hace más de 6 años.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.twitter.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </div>
+                </div>
+               
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productores.html">Productores</a></li>
+                        <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Soporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="envios.html">Envíos</a></li>
+                        <li><a href="devoluciones.html">Devoluciones</a></li>
+                        <li><a href="politicas-de-privacidad.html">Políticas de Privacidad</a></li>
+                        <li><a href="terminos-de-servicio.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HuertoHogar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+ <div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-content">
+        <div class="checkout-header">
+            <h2 class="checkout-title">Finalizar Compra</h2>
+            <button class="checkout-close" id="checkoutClose">&times;</button>
+        </div>
+        <div class="checkout-body" id="checkoutBody">
+            </div>
+    </div>
+</div>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/auth.js"></script>
+    
+</body>
+</html>

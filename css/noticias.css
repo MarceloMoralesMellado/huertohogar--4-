@@ -1,0 +1,70 @@
+/* Estilos para la página de artículo individual */
+.article-hero {
+    background: linear-gradient(135deg, #f8fdf8 0%, #e8f5f3 100%);
+    padding: 100px 0 60px;
+}
+
+.article-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 12px;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    margin-bottom: 24px;
+}
+
+.article-meta span {
+    margin: 0 8px;
+}
+
+.article-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.article-body p {
+    margin-bottom: 24px;
+    line-height: 1.8;
+    color: var(--gray-700);
+    font-size: 1.1rem;
+}
+
+.article-body h2 {
+    font-size: 1.8rem;
+    color: var(--secondary-green);
+    margin: 40px 0 20px;
+    border-bottom: 2px solid var(--light-green);
+    padding-bottom: 8px;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: var(--shadow-md);
+}
+
+.back-to-blog {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.back-to-blog:hover {
+    text-decoration: underline;
+}

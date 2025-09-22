@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos - HuertoHogar</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/info.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="../img\huerto_hogar_1.png" alt="HuertoHogar" class="logo">
+                    </a>
+                </div>
+
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="productos.html" class="nav-link">Productos</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="pedidos.html" class="nav-link">Mis Pedidos</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn" aria-label="Buscar"></button>
+                    <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="login-btn" id="loginBtn">Ingresar</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú móvil"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <div class="container-legal">
+                <h1 class="legal-title">Información de Envíos</h1>
+                <p class="legal-updated">Conectamos el campo con tu mesa de la forma más rápida y segura.</p>
+
+                <div class="legal-section">
+                    <h2 class="legal-subtitle">1. Zonas de Cobertura</h2>
+                    <p>Actualmente realizamos envíos a más de **9 ciudades de Chile**. Para verificar si cubrimos tu zona, ingresa tu dirección en el carrito de compras y calcularemos el costo y tiempo de entrega.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2 class="legal-subtitle">2. Tiempos de Entrega</h2>
+                    <p>Nuestros envíos son realizados de lunes a sábado. Los productos se recolectan y empaquetan el mismo día del envío para garantizar su frescura. La entrega se realiza en un plazo de **24 a 48 horas hábiles** desde la confirmación de tu pedido.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2 class="legal-subtitle">3. Costos de Envío</h2>
+                    <p>El costo de envío se calcula automáticamente en el carrito de compras en base a tu dirección. Ofrecemos **envío gratuito** para pedidos superiores a $30.000.</p>
+                </div>
+                
+                <div class="legal-section">
+                    <h2 class="legal-subtitle">4. Seguimiento de Pedidos</h2>
+                    <p>Una vez que tu pedido sea despachado, recibirás un correo electrónico con un enlace para seguir el estado de tu envío en tiempo real. También puedes revisar el estado de tus pedidos en la sección <a href="pedidos.html">"Mis Pedidos"</a> de tu cuenta.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="footer-logo">
+                <p class="footer-description">Conectando familias chilenas con productos frescos del campo desde hace más de 6 años.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.twitter.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+            
+      
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productores.html">Productores</a></li>
+                    <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Soporte</h4>
+                <ul class="footer-links">
+                    
+                    <li><a href="envios.html">Envíos</a></li>
+                    <li><a href="devoluciones.html">Devoluciones</a></li>
+                    <li><a href="politicas-de-privacidad.html">Políticas de Privacidad</a></li>
+                    <li><a href="terminos-de-servicio.html">Términos y Condiciones</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 HuertoHogar. Todos los derechos reservados.</p>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-content">
+        <div class="checkout-header">
+            <h2 class="checkout-title">Finalizar Compra</h2>
+            <button class="checkout-close" id="checkoutClose">&times;</button>
+        </div>
+        <div class="checkout-body" id="checkoutBody">
+            </div>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

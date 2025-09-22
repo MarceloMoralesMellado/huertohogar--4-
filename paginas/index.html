@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar - Productos Frescos del Campo a tu Mesa</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="logo">
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active">Inicio</a>
+                    <a href="productos.html" class="nav-link">Productos</a>
+                     <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="pedidos.html" class="nav-link">Mis Pedidos</a>
+                     <a href="contacto.html" class="nav-link">Contacto</a>
+                     <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" id="cartBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 21h12M9 19.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 1 0-3 0Z"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="login-btn" id="loginBtn">Ingresar</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Del Campo Directo a tu Mesa</h1>
+                <p class="hero-subtitle">Productos frescos y naturales de agricultores locales. Más de 6 años conectando familias chilenas con la mejor calidad del campo.</p>
+                <div class="hero-actions">
+                    <a href="productos.html" class="btn btn-primary">Ver Productos</a>
+                    <a href="nosotros.html" class="btn btn-secondary">Conócenos</a>
+                    
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">9+</span>
+                        <span class="stat-label">Ciudades</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Años</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Fresco</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../img/huerto_hogar_2.png" alt="Productos frescos del campo" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir HuertoHogar?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="m2 17 10 5 10-5"></path>
+                            <path d="m2 12 10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Directo del Productor</h3>
+                    <p class="feature-description">Sin intermediarios. Conectamos directamente con agricultores locales para garantizar frescura y precios justos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Entrega Rápida</h3>
+                    <p class="feature-description">Entregamos en 9+ ciudades de Chile. Productos frescos en tu puerta en menos de 24 horas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"></path>
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Calidad Garantizada</h3>
+                    <p class="feature-description">Seleccionamos cuidadosamente cada producto. Si no estás satisfecho, te devolvemos tu dinero.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="m2 17 10 5 10-5"></path>
+                            <path d="m2 12 10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Sustentable</h3>
+                    <p class="feature-description">Apoyamos prácticas agrícolas sostenibles y reducimos la huella de carbono con entregas eficientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="products-preview" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <a href="productos.html" class="btn btn-outline">Ver Todos</a>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Mantente al día con HuertoHogar</h2>
+                <p class="newsletter-subtitle">Recibe ofertas especiales, recetas saludables y noticias de nuestros productores.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Tu correo electrónico" class="newsletter-input" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="footer-logo">
+                <p class="footer-description">Conectando familias chilenas con productos frescos del campo desde hace más de 6 años.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.twitter.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+            
+      
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productores.html">Productores</a></li>
+                    <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Soporte</h4>
+                <ul class="footer-links">
+                    
+                    <li><a href="envios.html">Envíos</a></li>
+                    <li><a href="devoluciones.html">Devoluciones</a></li>
+                    <li><a href="politicas-de-privacidad.html">Políticas de Privacidad</a></li>
+                    <li><a href="terminos-de-servicio.html">Términos y Condiciones</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 HuertoHogar. Todos los derechos reservados.</p>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-content">
+        <div class="checkout-header">
+            <h2 class="checkout-title">Finalizar Compra</h2>
+            <button class="checkout-close" id="checkoutClose">&times;</button>
+        </div>
+        <div class="checkout-body" id="checkoutBody">
+            </div>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

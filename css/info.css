@@ -1,0 +1,117 @@
+/* Estilos generales para las páginas de contenido (Envíos, Devoluciones, etc.) */
+
+.container-legal {
+    max-width: 800px;
+    margin: var(--spacing-16) auto;
+    padding: var(--spacing-8);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    line-height: 1.8;
+}
+
+.legal-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-4);
+    text-align: center;
+}
+
+.legal-updated {
+    font-size: var(--font-size-sm);
+    color: var(--gray-500);
+    text-align: center;
+    margin-bottom: var(--spacing-8);
+}
+
+.legal-section {
+    margin-bottom: var(--spacing-8);
+}
+
+.legal-section h2,
+.legal-section h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    color: var(--secondary-green);
+    margin-bottom: var(--spacing-3);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: var(--spacing-2);
+}
+
+.legal-section h3 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-6);
+    border-bottom: none;
+}
+
+.legal-section p,
+.legal-section ul,
+.legal-section ol {
+    font-size: var(--font-size-base);
+    color: var(--gray-800);
+    margin-bottom: var(--spacing-4);
+}
+
+.legal-section ul,
+.legal-section ol {
+    padding-left: var(--spacing-8);
+}
+
+.legal-section li {
+    margin-bottom: var(--spacing-2);
+}
+
+.legal-section a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para la página de productores */
+.producer-grid {
+    display: grid;
+    gap: var(--spacing-8);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.producer-card {
+    background: var(--gray-50);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.producer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.producer-card h3 {
+    font-size: var(--font-size-xl);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-2);
+}
+
+.producer-card p {
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-legal {
+        padding: var(--spacing-4);
+        margin: var(--spacing-8) auto;
+    }
+
+    .legal-title {
+        font-size: var(--font-size-2xl);
+    }
+}

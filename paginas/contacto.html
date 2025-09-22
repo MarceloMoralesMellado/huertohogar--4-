@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HuertoHogar</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Added cart CSS to fix cart styling and positioning -->
+    <link rel="stylesheet" href="styles/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="../img\huerto_hogar_1.png" alt="HuertoHogar" class="logo">
+                    </a>
+                </div>
+                
+            
+           <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="productos.html" class="nav-link">Productos</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="pedidos.html" class="nav-link">Mis Pedidos</a>
+                    <a href="contacto.html" class="nav-link active">Contacto</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+
+           
+
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" id="cartBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 21h12M9 19.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 1 0-3 0Z"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="login-btn" id="loginBtn">Ingresar</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Contáctanos</h1>
+                    <p>Estamos aquí para ayudarte. Encuentra nuestras ubicaciones y ponte en contacto con nosotros.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Teléfono</h3>
+                        <p>+56 2 2345 6789</p>
+                        <p>Lunes a Viernes: 8:00 - 18:00</p>
+                        <p>Sábados: 9:00 - 14:00</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>info@huertohogar.cl</p>
+                        <p>ventas@huertohogar.cl</p>
+                        <p>Respuesta en 24 horas</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Oficina Principal</h3>
+                        <p>Av. Providencia 1234</p>
+                        <p>Providencia, Santiago</p>
+                        <p>Región Metropolitana</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">🚚</div>
+                        <h3>Cobertura</h3>
+                        <p>9+ ciudades en Chile</p>
+                        <p>Entrega en 24-48 horas</p>
+                        <p>Productos frescos garantizados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Envíanos un Mensaje</h2>
+                        <p>¿Tienes alguna pregunta o sugerencia? Nos encantaría escucharte.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta">Consulta General</option>
+                                    <option value="pedido">Problema con Pedido</option>
+                                    <option value="producto">Consulta de Producto</option>
+                                    <option value="entrega">Problema de Entrega</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="locations-section" id="ubicaciones">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestras Ubicaciones</h2>
+                    <p>Encuentra el centro de distribución más cercano a ti</p>
+                </div>
+                
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-image">
+                            <div class="location-placeholder">📍</div>
+                        </div>
+                        <div class="location-info">
+                            <h3>Santiago Centro</h3>
+                            <p>Av. Libertador Bernardo O'Higgins 1234</p>
+                            <p>Santiago, Región Metropolitana</p>
+                            <div class="location-hours">
+                                <strong>Horarios:</strong>
+                                <p>Lun - Vie: 8:00 - 18:00</p>
+                                <p>Sáb: 9:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image">
+                            <div class="location-placeholder">📍</div>
+                        </div>
+                        <div class="location-info">
+                            <h3>Las Condes</h3>
+                            <p>Av. Apoquindo 5678</p>
+                            <p>Las Condes, Región Metropolitana</p>
+                            <div class="location-hours">
+                                <strong>Horarios:</strong>
+                                <p>Lun - Vie: 8:00 - 18:00</p>
+                                <p>Sáb: 9:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image">
+                            <div class="location-placeholder">📍</div>
+                        </div>
+                        <div class="location-info">
+                            <h3>Valparaíso</h3>
+                            <p>Av. Pedro Montt 9012</p>
+                            <p>Valparaíso, Región de Valparaíso</p>
+                            <div class="location-hours">
+                                <strong>Horarios:</strong>
+                                <p>Lun - Vie: 8:30 - 17:30</p>
+                                <p>Sáb: 9:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image">
+                            <div class="location-placeholder">📍</div>
+                        </div>
+                        <div class="location-info">
+                            <h3>Concepción</h3>
+                            <p>Av. Colón 3456</p>
+                            <p>Concepción, Región del Biobío</p>
+                            <div class="location-hours">
+                                <strong>Horarios:</strong>
+                                <p>Lun - Vie: 8:30 - 17:30</p>
+                                <p>Sáb: 9:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Encuentra Nuestras Ubicaciones</h2>
+                <div class="map-container">
+                    <div class="interactive-map" id="interactive-map">
+                        <div class="map-placeholder">
+                            <div class="map-icon">🗺️</div>
+                            <h3>Mapa Interactivo</h3>
+                            <p>Haz clic en los marcadores para ver más información</p>
+                        </div>
+                        
+                        <!-- Map markers -->
+                        <div class="map-marker" data-location="santiago" style="top: 45%; left: 50%;">
+                            <div class="marker-pin">📍</div>
+                            <div class="marker-tooltip">
+                                <strong>Santiago Centro</strong><br>
+                                Av. Libertador B. O'Higgins 1234
+                            </div>
+                        </div>
+                        
+                        <div class="map-marker" data-location="lascondes" style="top: 40%; left: 55%;">
+                            <div class="marker-pin">📍</div>
+                            <div class="marker-tooltip">
+                                <strong>Las Condes</strong><br>
+                                Av. Apoquindo 5678
+                            </div>
+                        </div>
+                        
+                        <div class="map-marker" data-location="valparaiso" style="top: 35%; left: 45%;">
+                            <div class="marker-pin">📍</div>
+                            <div class="marker-tooltip">
+                                <strong>Valparaíso</strong><br>
+                                Av. Pedro Montt 9012
+                            </div>
+                        </div>
+                        
+                        <div class="map-marker" data-location="concepcion" style="top: 65%; left: 48%;">
+                            <div class="marker-pin">📍</div>
+                            <div class="marker-tooltip">
+                                <strong>Concepción</strong><br>
+                                Av. Colón 3456
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Encuentra respuestas a las consultas más comunes</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Cuál es el tiempo de entrega?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Realizamos entregas en 24-48 horas en la Región Metropolitana y 2-3 días en regiones. Los pedidos realizados antes de las 14:00 hrs se procesan el mismo día.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Cómo garantizan la frescura de los productos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Trabajamos directamente con productores locales y mantenemos una cadena de frío completa. Todos nuestros productos son cosechados máximo 24 horas antes de la entrega.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Puedo cancelar o modificar mi pedido?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Puedes cancelar o modificar tu pedido hasta 2 horas después de haberlo realizado. Después de este tiempo, el pedido entra en preparación y no puede ser modificado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>¿Qué métodos de pago aceptan?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Aceptamos tarjetas de crédito y débito (Visa, Mastercard), transferencias bancarias, y pago contra entrega en efectivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="footer-logo">
+                <p class="footer-description">Conectando familias chilenas con productos frescos del campo desde hace más de 6 años.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.twitter.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+            
+       
+            <div class="footer-section">
+                <h4 class="footer-title">Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productores.html">Productores</a></li>
+                    <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Soporte</h4>
+                <ul class="footer-links">
+                    
+                    <li><a href="envios.html">Envíos</a></li>
+                    <li><a href="devoluciones.html">Devoluciones</a></li>
+                    <li><a href="politicas-de-privacidad.html">Políticas de Privacidad</a></li>
+                    <li><a href="terminos-de-servicio.html">Términos y Condiciones</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 HuertoHogar. Todos los derechos reservados.</p>
+            
+        </div>
+    </div>
+</footer>
+
+    <!-- Auth Modals -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-content auth-modal">
+            <div class="modal-header">
+                <h3>Iniciar Sesión</h3>
+                <button class="close-btn" onclick="closeLoginModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Contraseña</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                </form>
+                <div class="auth-divider">
+                    <span>o continúa con</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <span>G</span> Google
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <span>f</span> Facebook
+                    </button>
+                </div>
+                <p class="auth-switch">
+                    ¿No tienes cuenta? <a href="#" onclick="switchToRegister()">Regístrate aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="register-modal">
+        <div class="modal-content auth-modal">
+            <div class="modal-header">
+                <h3>Crear Cuenta</h3>
+                <button class="close-btn" onclick="closeRegisterModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-name">Nombre Completo</label>
+                        <input type="text" id="register-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Contraseña</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirmar Contraseña</label>
+                        <input type="password" id="register-confirm" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Crear Cuenta</button>
+                </form>
+                <div class="auth-divider">
+                    <span>o continúa con</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <span>G</span> Google
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <span>f</span> Facebook
+                    </button>
+                </div>
+                <p class="auth-switch">
+                    ¿Ya tienes cuenta? <a href="#" onclick="switchToLogin()">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-content">
+        <div class="checkout-header">
+            <h2 class="checkout-title">Finalizar Compra</h2>
+            <button class="checkout-close" id="checkoutClose">&times;</button>
+        </div>
+        <div class="checkout-body" id="checkoutBody">
+            </div>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

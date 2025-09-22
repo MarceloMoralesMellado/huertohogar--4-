@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - HuertoHogar</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="../img\huerto_hogar_1.png" alt="HuertoHogar" class="logo">
+                    </a>
+                </div>
+                
+               <div class="nav-menu" id="navMenu">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="productos.html" class="nav-link">Productos</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="pedidos.html" class="nav-link">Mis Pedidos</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" id="cartBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 21h12M9 19.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 1 0-3 0Z"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="login-btn" id="loginBtn">Ingresar</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Page -->
+    <main class="profile-page">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar-large" id="profileAvatarLarge">U</div>
+                <h1 class="profile-title" id="profileTitle">Mi Perfil</h1>
+                <p class="profile-subtitle" id="profileSubtitle">Gestiona tu información personal y preferencias</p>
+            </div>
+
+            <div class="profile-content">
+                <aside class="profile-sidebar">
+                    <nav class="profile-nav">
+                        <button class="profile-nav-item active" data-section="personal">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Información Personal
+                        </button>
+                        <button class="profile-nav-item" data-section="orders">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 21h12"></path>
+                            </svg>
+                            Mis Pedidos
+                        </button>
+                        <button class="profile-nav-item" data-section="addresses">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Direcciones
+                        </button>
+                        <button class="profile-nav-item" data-section="preferences">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+                            </svg>
+                            Preferencias
+                        </button>
+                        <button class="profile-nav-item" data-section="security">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            Seguridad
+                        </button>
+                    </nav>
+                </aside>
+
+                <div class="profile-main">
+                    <!-- Personal Information Section -->
+                    <section class="profile-section active" id="personalSection">
+                        <h2 class="section-title">Información Personal</h2>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-card">
+                                <span class="stat-number" id="totalOrders">0</span>
+                                <span class="stat-label">Pedidos Realizados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" id="totalSpent">$0</span>
+                                <span class="stat-label">Total Gastado</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" id="memberSince">2024</span>
+                                <span class="stat-label">Miembro Desde</span>
+                            </div>
+                        </div>
+
+                        <form class="profile-form" id="personalInfoForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-input" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Apellido</label>
+                                    <input type="text" class="form-input" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Teléfono</label>
+                                <input type="tel" class="form-input" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-input" name="birthDate">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                        </form>
+                    </section>
+
+                    <!-- Orders Section -->
+                    <section class="profile-section" id="ordersSection">
+                        <h2 class="section-title">Mis Pedidos</h2>
+                        <div id="ordersContent">
+                            <p>No tienes pedidos aún. <a href="productos.html" style="color: var(--primary-green);">¡Haz tu primer pedido!</a></p>
+                        </div>
+                    </section>
+
+                    <!-- Addresses Section -->
+                    <section class="profile-section" id="addressesSection">
+                        <h2 class="section-title">Direcciones de Entrega</h2>
+                        <div id="addressesContent">
+                            <p>No tienes direcciones guardadas.</p>
+                            <button class="btn btn-primary" onclick="profileManager.addAddress()">Agregar Dirección</button>
+                        </div>
+                    </section>
+
+                    <!-- Preferences Section -->
+                    <section class="profile-section" id="preferencesSection">
+                        <h2 class="section-title">Preferencias</h2>
+                        <form class="profile-form" id="preferencesForm">
+                            <div class="form-group">
+                                <label class="form-label">Categorías Favoritas</label>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="prefVerduras" name="categories" value="verduras">
+                                    <label for="prefVerduras">Verduras</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="prefFrutas" name="categories" value="frutas">
+                                    <label for="prefFrutas">Frutas</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="prefHierbas" name="categories" value="hierbas">
+                                    <label for="prefHierbas">Hierbas</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="prefOrganicos" name="categories" value="organicos">
+                                    <label for="prefOrganicos">Solo Productos Orgánicos</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Notificaciones</label>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="emailNotifications" name="notifications" value="email" checked>
+                                    <label for="emailNotifications">Recibir ofertas por email</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="orderUpdates" name="notifications" value="orders" checked>
+                                    <label for="orderUpdates">Actualizaciones de pedidos</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar Preferencias</button>
+                        </form>
+                    </section>
+
+                    <!-- Security Section -->
+                    <section class="profile-section" id="securitySection">
+                        <h2 class="section-title">Seguridad</h2>
+                        <form class="profile-form" id="passwordForm">
+                            <div class="form-group">
+                                <label class="form-label">Contraseña Actual</label>
+                                <input type="password" class="form-input" name="currentPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Nueva Contraseña</label>
+                                <input type="password" class="form-input" name="newPassword" required minlength="6">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Confirmar Nueva Contraseña</label>
+                                <input type="password" class="form-input" name="confirmNewPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- Footer -->
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../img/huerto_hogar_1.png" alt="HuertoHogar" class="footer-logo">
+                <p class="footer-description">Conectando familias chilenas con productos frescos del campo desde hace más de 6 años.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.twitter.com/HuertoHogar" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+            
+        
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productores.html">Productores</a></li>
+                    <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Soporte</h4>
+                <ul class="footer-links">
+                    
+                    <li><a href="envios.html">Envíos</a></li>
+                    <li><a href="devoluciones.html">Devoluciones</a></li>
+                    <li><a href="politicas-de-privacidad.html">Políticas de Privacidad</a></li>
+                    <li><a href="terminos-de-servicio.html">Términos y Condiciones</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 HuertoHogar. Todos los derechos reservados.</p>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-content">
+        <div class="checkout-header">
+            <h2 class="checkout-title">Finalizar Compra</h2>
+            <button class="checkout-close" id="checkoutClose">&times;</button>
+        </div>
+        <div class="checkout-body" id="checkoutBody">
+            </div>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

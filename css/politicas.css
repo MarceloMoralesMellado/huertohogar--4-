@@ -1,0 +1,49 @@
+/* Estilos para las páginas legales (Políticas de Privacidad, Términos, etc.) */
+.container-legal {
+    max-width: 800px;
+    margin: var(--spacing-16) auto;
+    padding: var(--spacing-8);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.legal-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-4);
+    text-align: center;
+}
+
+.legal-updated {
+    font-size: var(--font-size-sm);
+    color: var(--gray-500);
+    text-align: center;
+    margin-bottom: var(--spacing-8);
+}
+
+.legal-section {
+    margin-bottom: var(--spacing-8);
+}
+
+.legal-subtitle {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--secondary-green);
+    margin-bottom: var(--spacing-3);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: var(--spacing-2);
+}
+
+.legal-section p, .legal-section ul {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-4);
+}
+
+.legal-section ul {
+    margin-left: var(--spacing-6);
+    list-style-type: disc;
+}
