@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/auth.css">
     <link rel="stylesheet" href="../css/contact.css">
+
     <!-- Added cart CSS to fix cart styling and positioning -->
     <link rel="stylesheet" href="styles/cart.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -23,7 +26,7 @@
                 </div>
                 
             
-           <div class="nav-menu" id="navMenu">
+            <div class="nav-menu" id="navMenu">
                     <a href="index.html" class="nav-link">Inicio</a>
                     <a href="productos.html" class="nav-link">Productos</a>
                     <a href="nosotros.html" class="nav-link">Nosotros</a>
@@ -32,7 +35,7 @@
                     <a href="blog.html" class="nav-link">Blog</a>
                 </div>
 
-           
+            
 
                 <div class="nav-actions">
                     <button class="search-btn" id="searchBtn">
@@ -171,7 +174,7 @@
                 <div class="locations-grid">
                     <div class="location-card">
                         <div class="location-image">
-                            <div class="location-placeholder">📍</div>
+                            <img src="../img/tienda_11.png" alt="Imagen de Santiago Centro">
                         </div>
                         <div class="location-info">
                             <h3>Santiago Centro</h3>
@@ -187,7 +190,7 @@
                     
                     <div class="location-card">
                         <div class="location-image">
-                            <div class="location-placeholder">📍</div>
+                            <img src="../img/tienda_3.png" alt="Imagen de Las Condes">
                         </div>
                         <div class="location-info">
                             <h3>Las Condes</h3>
@@ -203,7 +206,7 @@
                     
                     <div class="location-card">
                         <div class="location-image">
-                            <div class="location-placeholder">📍</div>
+                            <img src="../img\tienda_4.png" alt="Imagen de Valparaíso">
                         </div>
                         <div class="location-info">
                             <h3>Valparaíso</h3>
@@ -219,7 +222,7 @@
                     
                     <div class="location-card">
                         <div class="location-image">
-                            <div class="location-placeholder">📍</div>
+                            <img src="../img/tienda_5.png" alt="Imagen de Concepción">
                         </div>
                         <div class="location-info">
                             <h3>Concepción</h3>
@@ -239,48 +242,17 @@
         <!-- Map Section -->
         <section class="map-section">
             <div class="container">
-                <h2>Encuentra Nuestras Ubicaciones</h2>
+                <h2>Encuentra Nuestras Ubicaciones en el Mapa</h2>
                 <div class="map-container">
-                    <div class="interactive-map" id="interactive-map">
-                        <div class="map-placeholder">
-                            <div class="map-icon">🗺️</div>
-                            <h3>Mapa Interactivo</h3>
-                            <p>Haz clic en los marcadores para ver más información</p>
-                        </div>
-                        
-                        <!-- Map markers -->
-                        <div class="map-marker" data-location="santiago" style="top: 45%; left: 50%;">
-                            <div class="marker-pin">📍</div>
-                            <div class="marker-tooltip">
-                                <strong>Santiago Centro</strong><br>
-                                Av. Libertador B. O'Higgins 1234
-                            </div>
-                        </div>
-                        
-                        <div class="map-marker" data-location="lascondes" style="top: 40%; left: 55%;">
-                            <div class="marker-pin">📍</div>
-                            <div class="marker-tooltip">
-                                <strong>Las Condes</strong><br>
-                                Av. Apoquindo 5678
-                            </div>
-                        </div>
-                        
-                        <div class="map-marker" data-location="valparaiso" style="top: 35%; left: 45%;">
-                            <div class="marker-pin">📍</div>
-                            <div class="marker-tooltip">
-                                <strong>Valparaíso</strong><br>
-                                Av. Pedro Montt 9012
-                            </div>
-                        </div>
-                        
-                        <div class="map-marker" data-location="concepcion" style="top: 65%; left: 48%;">
-                            <div class="marker-pin">📍</div>
-                            <div class="marker-tooltip">
-                                <strong>Concepción</strong><br>
-                                Av. Colón 3456
-                            </div>
-                        </div>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/d/embed?mid=1wJZtgtD82920ZaAnIbeRC1i354ZYrYc"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -339,7 +311,7 @@
     </main>
 
     <!-- Footer -->
-     <footer class="footer">
+    <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
@@ -352,7 +324,7 @@
                 </div>
             </div>
             
-       
+        
             <div class="footer-section">
                 <h4 class="footer-title">Empresa</h4>
                 <ul class="footer-links">
@@ -384,96 +356,8 @@
 </footer>
 
     <!-- Auth Modals -->
-    <div class="modal-overlay" id="login-modal">
-        <div class="modal-content auth-modal">
-            <div class="modal-header">
-                <h3>Iniciar Sesión</h3>
-                <button class="close-btn" onclick="closeLoginModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <form id="login-form">
-                    <div class="form-group">
-                        <label for="login-email">Email</label>
-                        <input type="email" id="login-email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="login-password">Contraseña</label>
-                        <input type="password" id="login-password" required>
-                    </div>
-                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
-                </form>
-                <div class="auth-divider">
-                    <span>o continúa con</span>
-                </div>
-                <div class="social-login">
-                    <button class="social-btn google-btn">
-                        <span>G</span> Google
-                    </button>
-                    <button class="social-btn facebook-btn">
-                        <span>f</span> Facebook
-                    </button>
-                </div>
-                <p class="auth-switch">
-                    ¿No tienes cuenta? <a href="#" onclick="switchToRegister()">Regístrate aquí</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal-overlay" id="register-modal">
-        <div class="modal-content auth-modal">
-            <div class="modal-header">
-                <h3>Crear Cuenta</h3>
-                <button class="close-btn" onclick="closeRegisterModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <form id="register-form">
-                    <div class="form-group">
-                        <label for="register-name">Nombre Completo</label>
-                        <input type="text" id="register-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-email">Email</label>
-                        <input type="email" id="register-email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-password">Contraseña</label>
-                        <input type="password" id="register-password" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-confirm">Confirmar Contraseña</label>
-                        <input type="password" id="register-confirm" required>
-                    </div>
-                    <button type="submit" class="btn-primary">Crear Cuenta</button>
-                </form>
-                <div class="auth-divider">
-                    <span>o continúa con</span>
-                </div>
-                <div class="social-login">
-                    <button class="social-btn google-btn">
-                        <span>G</span> Google
-                    </button>
-                    <button class="social-btn facebook-btn">
-                        <span>f</span> Facebook
-                    </button>
-                </div>
-                <p class="auth-switch">
-                    ¿Ya tienes cuenta? <a href="#" onclick="switchToLogin()">Inicia sesión aquí</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="checkout-modal" id="checkoutModal">
-    <div class="checkout-overlay" id="checkoutOverlay"></div>
-    <div class="checkout-content">
-        <div class="checkout-header">
-            <h2 class="checkout-title">Finalizar Compra</h2>
-            <button class="checkout-close" id="checkoutClose">&times;</button>
-        </div>
-        <div class="checkout-body" id="checkoutBody">
-            </div>
-    </div>
-</div>
+    
+    
 
     <script src="../js/main.js"></script>
     <script src="../js/cart.js"></script>

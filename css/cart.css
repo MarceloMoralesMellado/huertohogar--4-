@@ -1,12 +1,12 @@
 /* Shopping Cart Styles */
-
+/*CARRITO DE COMPRAS*/
 .cart-sidebar {
   position: fixed;
   top: 0;
   right: -400px; /* Initially hidden */
   width: 400px;
   height: 100vh;
-  background: var(--white);
+  background: var(--light-green);/*EDITADO*/
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
   z-index: 9999; /* Higher z-index to appear on top */
   transition: right 0.3s ease;
@@ -244,16 +244,16 @@
   border-radius: var(--radius-md);
   text-decoration: none;
 }
-
+/**********************************************/
 .cart-checkout-btn {
   background-color: var(--primary-green);
-  color: var(--white);
+  color: var(--light-green); /*PROCEDER AL CHECKOUT*/
   border: none;
   cursor: pointer;
 }
 
 .cart-continue-shopping {
-  background-color: var(--white);
+  background-color: var(--light-green);
   color: var(--primary-green);
   border: 1px solid var(--primary-green);
 }
@@ -283,7 +283,7 @@
 }
 
 .checkout-content {
-  background: var(--white);
+  background: var(--light-green);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
   max-width: 600px;
@@ -457,12 +457,12 @@
 
 .checkout-btn-primary {
   background-color: var(--primary-green);
-  color: var(--white);
+  color: var(--light-green);
 }
-
+/*************************************************/
 .checkout-btn-secondary {
   background-color: var(--white);
-  color: var(--primary-green);
+  color: var(--primary-green); /*CONFIRMAR PEDIDO*/
   border: 1px solid var(--primary-green);
 }
 

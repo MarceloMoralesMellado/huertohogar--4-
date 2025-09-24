@@ -98,19 +98,19 @@ body {
 }
 
 .nav-brand .logo {
-  height: 35px;
+  height: 35px; /* Ajusta la altura (tamaño) del logo según sea necesario */
   width: auto;
 }
 
 .nav-menu {
   display: flex;
-  gap: var(--spacing-12);
+  gap: var(--spacing-12); /* Espacio entre enlaces del navbar */
   align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
-  color: var(--gray-600);
+  color: var(--gray-600); /* Color de los enlaces del navbar */
   font-weight: 500;
   transition: color 0.2s ease;
   position: relative;
@@ -118,7 +118,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--primary-green);
+  color: var(--primary-green);/* Color al pasar el mouse */
 }
 
 .nav-link.active::after {
@@ -128,7 +128,7 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: var(--primary-green);
+  background-color: var(--primary-green);/* Línea debajo del enlace activo */
 }
 
 .nav-actions {
@@ -159,7 +159,7 @@ body {
   top: -4px;
   right: -4px;
   background-color: var(--accent-orange);
-  color: var(--white);
+  color: var(--light-green);
   font-size: var(--font-size-xs);
   font-weight: 600;
   padding: 2px 6px;
@@ -313,12 +313,12 @@ body {
   flex: 1;
    
 }
-
+/*****************************************/
 .hero-img {
   width: 100%;
   height: auto;
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
+  box-shadow: none /*IMAGEN MAIN CAJA + LOGO HUERTOHOGAR*/
   /**********************
   border: none;
   outline: none;
@@ -327,7 +327,7 @@ body {
 
 /* Features Section */
 .features {
-  padding: var(--spacing-20) 0;
+  padding: var(--spacing-12) 0;
   background-color: var(--white);
 }
 
@@ -338,16 +338,16 @@ body {
   text-align: center;
   margin-bottom: var(--spacing-16);
 }
-
+/*********************************************/
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-8);
+  gap: var(--spacing-4); /* Espacio entre tarjetas porque elegir huerto hogar*/
 }
 
 .feature-card {
   text-align: center;
-  padding: var(--spacing-8);
+  padding: var(--spacing-10);
   border-radius: var(--radius-lg);
   background-color: var(--gray-50);
   transition: transform 0.2s ease, box-shadow 0.2s ease;

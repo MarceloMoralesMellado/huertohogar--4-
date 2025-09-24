@@ -26,7 +26,7 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-/*diseño del autenticador*//***********************************/
+/*diseño del autenticador*/
 .auth-content {
   position: relative;
   background: #ffffff;
@@ -65,7 +65,7 @@
 }
 
 
-/* logo del login*//**********************************/
+/* logo del login*/
 .auth-logo {
   height: 30px;
   margin-bottom: var(--spacing-4);
@@ -339,6 +339,7 @@
 .dropdown-header {
   padding: var(--spacing-4);
   border-bottom: 1px solid var(--gray-200);
+  background-color: var(--light-green); /*color del header del dropdown*/
 }
 
 .dropdown-user-name {
@@ -354,6 +355,7 @@
 
 .dropdown-menu {
   padding: var(--spacing-2);
+  background-color: var(--light-green); /*color del menu del dropdown*/
 }
 
 .dropdown-item {

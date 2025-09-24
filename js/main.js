@@ -236,7 +236,7 @@ class HuertoHogar {
 
   showLogin() {
     console.log("[v0] Login button clicked")
-    // This will be implemented in the authentication phase
+    // This will be implemented in the authentication phase                /*hacer el autenticador*/
     alert("Sistema de login - Próximamente en la siguiente fase")
   }
 
@@ -278,6 +278,7 @@ class HuertoHogar {
         category: "verduras",
         organic: true,
       },
+      /* productos destacados adicionales
       {
         id: 14,
         name: "Frutillas del Sur",
@@ -286,6 +287,7 @@ class HuertoHogar {
         category: "frutas",
         organic: true,
       },
+      */
     ]
 
 
