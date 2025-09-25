@@ -2,7 +2,7 @@
 
 /* Sección Hero */
 .blog-hero {
-    background: linear-gradient(135deg, #f8fdf8 0%, #e8f5f3 100%);
+    background: var(--light-green);
     padding: 120px 0 80px;
 }
 
@@ -94,7 +94,7 @@
 .blog-post-read-more {
     display: inline-block;
     margin-top: 16px;
-    color: #ff7700;
+    color: #2d5a27;
     font-weight: 600;
     text-decoration: none;
 }

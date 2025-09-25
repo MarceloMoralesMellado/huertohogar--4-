@@ -486,8 +486,10 @@ class AuthSystem {
   }
 
   showOrders() {
-    // This will be implemented in the order management phase
-    this.showNotification("Gestión de pedidos - Próximamente en la siguiente fase")
+    // REDIRECCIÓN CORREGIDA
+    // El archivo pedidos.html está en la misma carpeta que la página actual (ej. index.html o profile.html)
+    window.location.href = "pedidos.html" 
+    this.closeProfileDropdown() // Cierra el menú desplegable después de hacer clic
   }
 
   // Utility Methods

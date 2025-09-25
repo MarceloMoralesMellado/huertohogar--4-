@@ -22,7 +22,7 @@ class OrderManager {
   }
 
   checkAuthState() {
-    const user = JSON.parse(localStorage.getItem("currentUser"))
+    const user = JSON.parse(localStorage.getItem("huertohogar-user")) /*usuario iniciado en mi pedidos*/
     if (!user) {
       this.showLoginRequired()
       return false
@@ -66,14 +66,14 @@ class OrderManager {
             name: "Tomates Cherry Orgánicos",
             quantity: 2,
             price: 4500,
-            image: "public/fresh-organic-cherry-tomatoes.jpg",
+            image: "../img/tomates_cherry.jpg",
           },
           {
             id: 2,
             name: "Paltas Hass Premium",
             quantity: 1,
             price: 8500,
-            image: "public/premium-hass-avocados.jpg",
+            image: "../img/palta.jpg",
           },
         ],
         tracking: [
@@ -94,14 +94,14 @@ class OrderManager {
             name: "Lechuga Hidropónica",
             quantity: 3,
             price: 2500,
-            image: "public/fresh-hydroponic-lettuce.jpg",
+            image: "../img/lechuga_hidroponica.jpg",
           },
           {
             id: 4,
             name: "Frutillas del Sur",
             quantity: 2,
             price: 4500,
-            image: "public/fresh-southern-strawberries.jpg",
+            image: "../img/frutillas2.jpg",
           },
         ],
         tracking: [
@@ -122,14 +122,14 @@ class OrderManager {
             name: "Espinacas Orgánicas",
             quantity: 2,
             price: 3200,
-            image: "public/fresh-organic-spinach-leaves.jpg",
+            image: "../img/espinaca.jpg",
           },
           {
             id: 6,
             name: "Pimientos Tricolor",
             quantity: 1,
             price: 5500,
-            image: "public/colorful-bell-peppers-red-yellow-green.jpg",
+            image: "../img/pimientos_tricolor.jpg",
           },
         ],
         tracking: [
@@ -233,11 +233,17 @@ class OrderManager {
                     }
                 </div>
                 
+                
+                
                 <div class="order-footer">
                     <div class="order-total">
                         Total: $${order.total.toLocaleString()}
                     </div>
                     <div class="order-actions">
+                        <button class="btn-outline" onclick="orderManager.showNotification('Función de Boleta Pendiente')">
+                            Ver Boleta
+                        </button>
+
                         <button class="btn-outline" onclick="orderManager.viewOrderDetail('${order.id}')">
                             Ver Detalle
                         </button>
@@ -423,6 +429,7 @@ class OrderManager {
     return newOrder.id
   }
 }
+
 
 // Close order detail modal
 function closeOrderDetailModal() {

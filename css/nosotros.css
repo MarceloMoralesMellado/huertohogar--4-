@@ -1,0 +1,181 @@
+/* --- Hero Section --- */
+
+.hero {
+    /* Estilos extraídos del HTML */
+    background: var(--light-green);
+    padding: 120px 0 80px;
+}
+
+.hero-content {
+    /* Estilos extraídos del HTML */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Mission & Vision Sections --- */
+
+.features {
+    padding: 80px 0;
+}
+
+.features-grid {
+    /* Estilos extraídos del HTML */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mission-title {
+    /* H2 de Misión y Visión */
+    color: #2d5a27;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+}
+
+.mission-paragraph {
+    /* Párrafo de Misión y Visión */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 32px;
+}
+
+.feature-tag-list {
+    /* Contenedor de los tags */
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.mission-tag {
+    /* Tags de Misión (verde) */
+    background: #e8f5f3;
+    color: #2d5a27;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.vision-tag {
+    /* Tags de Visión (naranjo) */
+    background: #fff3e0;
+    color: #e65100;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.feature-image {
+    /* Imágenes de Misión y Visión */
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Vision Section (Background) --- */
+.vision-section {
+    background: #f8fffe;
+    padding: 80px 0;
+}
+
+/* --- Stats Section --- */
+
+.stats-section {
+    padding: 80px 0;
+}
+
+.section-title.stats {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.stats-grid {
+    /* Este estilo asume que ya existe un .features-grid,
+       si no, habría que definirlo aquí */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas para los 4 stats */
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-card {
+    padding: 20px;
+    border-radius: 8px;
+    /* Puedes añadir más estilos de tarjeta aquí si lo deseas */
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d5a27; /* Color principal de HuertoHogar */
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.stat-description {
+    font-size: 1rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+/* --- Team Values Section --- */
+
+.values-section {
+    background: var(--light-green);
+    padding: 80px 0;
+}
+
+.section-title.values {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    /* Estilo para las tarjetas de valores */
+    background-color: #fff3e0;
+    text-align: center;
+}
+
+.feature-icon-wrapper {
+    /* Estilos de los círculos alrededor de los íconos */
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.feature-icon-wrapper.green-bg {
+    background: #e8f5f3;
+}
+
+.feature-icon-wrapper.orange-bg {
+    background: #fff3e0;
+}
+
+.feature-icon-wrapper svg {
+    /* Iconos SVG */
+    stroke-width: 2;
+}
+
+.feature-icon-wrapper.green-bg svg {
+    stroke: #2d5a27;
+}
+
+.feature-icon-wrapper.orange-bg svg {
+    stroke: #e65100;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    color: #2d5a27;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #6a737d;
+}

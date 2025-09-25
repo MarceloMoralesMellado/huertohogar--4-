@@ -207,7 +207,7 @@ class ProductCatalog {
         id: 9,
         name: "Albahaca Fresca",
         category: "hierbas",
-        price: 800,
+        price: 1800,
         originalPrice: null,
         image: "../img/albahaca.jpg",
         description:
@@ -400,8 +400,8 @@ class ProductCatalog {
     modalDescription.textContent = product.description
     modalProducer.textContent = product.producer
     modalRegion.textContent = product.region
-
-    if (product.originalPrice) {
+    
+    if (product.originalPrice) {/* Mostrar precio con descuento */
       modalPrice.innerHTML = `
         <span class="product-original-price">$${product.originalPrice.toLocaleString("es-CL")}</span>
         <span class="price-current">$${product.price.toLocaleString("es-CL")}</span>

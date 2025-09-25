@@ -1,8 +1,29 @@
-/* Orders Page Styles */
+
+:root {
+  /* Se establece un color verde fijo para la marca (puedes cambiar este valor) */
+  --primary-color: var(--primary-green); /* #2d5a27;*/
+  --text-primary: var(--primary-green); 
+  --text-secondary: #666;
+  --border-color: #ddd;
+  --border-light: #eee;
+  --accent-color: #ff9800; 
+
+  
+  --bg-page: #fdd0d063; 
+}
+
+/* 2. Aplicación del Color de Fondo de la Página      */
+
+body {
+    background-color: var(--bg-page);
+}
+
+/* 3. Estilos para la Página de Pedidos (Tu código original)        */
+
 .orders-header {
   text-align: center;
-  margin-bottom: 2rem;
-  padding: 2rem 0;
+  margin-bottom: 4rem;
+  padding: 4rem 0;
 }
 
 .orders-header h1 {
@@ -29,7 +50,7 @@
 .filter-btn {
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--border-color);
-  background: white;
+  background: rgb(255, 255, 255);
   color: var(--text-secondary);
   border-radius: 25px;
   font-weight: 500;
@@ -45,7 +66,7 @@
 }
 
 .filter-btn.active {
-  background: var(--primary-color);
+  background: var(--primary-color); /* ¡Ahora usa el color fijo! */
   border-color: var(--primary-color);
   color: white;
 }
@@ -62,7 +83,7 @@
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(160, 66, 66, 0.1);
   border: 1px solid var(--border-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -262,7 +283,7 @@
 }
 
 .timeline-icon.completed {
-  background: var(--primary-color);
+  background: var(--primary-color); /* ¡Ahora usa el color fijo! */
   color: white;
 }
 
@@ -311,7 +332,68 @@
   margin-bottom: 2rem;
 }
 
-/* Responsive Design */
+
+/* ---------------------------------------------------------------- */
+/* 4. Estilos del Modal de Detalle (Para corregir posición)         */
+/* ---------------------------------------------------------------- */
+.modal-overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1050; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 500px;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: var(--text-primary);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* ---------------------------------------------------------------- */
+/* 5. Responsive Design (Tu código original)                        */
+/* ---------------------------------------------------------------- */
 @media (max-width: 768px) {
   .orders-header h1 {
     font-size: 2rem;
@@ -371,4 +453,18 @@
   .item-price {
     font-size: 0.8rem;
   }
+}
+
+
+/* 6. Solución de Especificidad del Fondo (Para Forzar el Cambio)   */
+
+
+/* Cambia el fondo de la etiqueta principal que contiene el contenido */
+main {
+    background-color: var(--bg-page) !important;
+}
+
+/* Si tu contenido no está en un <main>, usa el body con !important */
+body {
+    background-color: var(--bg-page) !important;
 }

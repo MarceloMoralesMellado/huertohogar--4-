@@ -1,0 +1,311 @@
+/*
+ * --------------------------------
+ * Variables y Estilos Base (Asumidos de main.css)
+ * Puedes ajustarlos o moverlos a tu main.css
+ * --------------------------------
+ */
+:root {
+    --primary-green: var(var(--primary-green)); /* Color principal de HuertoHogar   #ff7b001a;  */ /* Color principal de HuertoHogar   #ff7b001a;  */
+    --primary-dark: #2c3e50;
+    --secondary-light: var(--light-green);
+    --border-color: #e0e0e0;
+    --text-color: #000000;
+}
+
+.profile-page {
+    padding: 40px 20px;
+    background-color: #ff7b0000; /*var(--light-green);*/
+    min-height: calc(100vh - 150px); /* Ajusta para que ocupe toda la altura */
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/*
+ * --------------------------------
+ * Encabezado del Perfil
+ * --------------------------------
+ */
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.profile-avatar-large {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    background-color: var(--primary-green);
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.profile-title {
+    font-size: 2.2rem;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.profile-subtitle {
+    font-size: 1rem;
+    color: #777;
+}
+
+/*
+ * --------------------------------
+ * Contenido Principal (Layout Sidebar + Main)
+ * --------------------------------
+ */
+.profile-content {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-sidebar {
+    flex: 0 0 250px; /* Ancho fijo para el sidebar en desktop */
+}
+
+.profile-main {
+    flex-grow: 1;
+}
+
+/*
+ * --------------------------------
+ * Navegación Lateral (Sidebar)
+ * --------------------------------
+ */
+.profile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-light);
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.profile-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.profile-nav-item:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.profile-nav-item.active {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: var(--primary-green);
+    font-weight: 600;
+    border-left: 3px solid var(--primary-green);
+}
+
+.profile-nav-item svg {
+    stroke: currentColor;
+}
+
+
+/*
+ * --------------------------------
+ * Secciones y Contenido Principal
+ * --------------------------------
+ */
+.profile-section {
+    padding: 0 0 40px 0;
+    /* Solo la sección activa debe ser visible, esto se maneja con JavaScript */
+    display: none; 
+}
+
+.profile-section.active {
+    display: block;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/*
+ * --------------------------------
+ * Estadísticas (Stats)
+ * --------------------------------
+ */
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.stat-card {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/*
+ * --------------------------------
+ * Formularios y Campos
+ * --------------------------------
+ */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.form-input {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+    border-color: var(--primary-green);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.btn-primary:hover {
+    background-color: #43A047;
+}
+
+/* Checkbox (Preferencias) */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-green);
+}
+
+/*
+ * --------------------------------
+ * Diseño Responsivo
+ * --------------------------------
+ */
+@media (max-width: 992px) {
+    .profile-content {
+        flex-direction: column; /* Apila sidebar y main en pantallas pequeñas */
+    }
+
+    .profile-sidebar {
+        flex: 0 0 auto; /* Elimina el ancho fijo */
+        margin-bottom: 20px;
+    }
+
+    .profile-nav {
+        flex-direction: row; /* Convierte el nav lateral en una barra horizontal */
+        overflow-x: auto; /* Permite scroll horizontal si hay muchos ítems */
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .profile-nav-item {
+        white-space: nowrap; /* Evita que los ítems de menú se partan */
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .profile-nav-item.active {
+        border-left: none;
+        border-bottom: 3px solid var(--primary-green);
+    }
+
+    .profile-stats {
+        flex-wrap: wrap;
+    }
+    
+    .stat-card {
+        min-width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 15px;
+    }
+    
+    .form-row {
+        flex-direction: column; /* Apila campos en una sola columna en móviles */
+    }
+}

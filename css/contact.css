@@ -1,23 +1,17 @@
-/* Header Styles */ /********************/
-.header {
-  background-color: var(--light-green);
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); /* sombra más compleja */
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+
 /* Contact Page Styles */
 .contact-hero {
- background: #ffffff1a; /*#ff7b00c4; #005800;*/
- color: var(--primary-green); /*contactanos*/
- padding: 4rem 0;
- text-align: center;
+   color: var(--primary-green); /*contactanos*/
+   padding: 70px 0 80px;
+   text-align: center;
+   background-color: var(--light-green);
+  
 }
 
 .contact-hero h1 {
  font-size: 3rem;
  font-weight: 700;
- margin-bottom: 1rem;
+ margin-bottom: 2rem;
 }
 
 .contact-hero p {
@@ -31,7 +25,7 @@
 /* Contact Info Section */
 .contact-info {
  padding: 4rem 0;
- background: #ff7b001a;
+ background: #fdd0d063; 
 }
 
 .contact-grid {
@@ -72,15 +66,17 @@
  line-height: 1.5;
 }
 
-/* Contact Form Section */
+/* SECCION DE CONTACTO */
 .contact-form-section {
  padding: 4rem 0;
+   background: white /*EDITADO*/
 }
 
 .form-container {
  max-width: 800px;
  margin: 0 auto;
- background: #45464518; /*envianos un mensaje*/
+ color: #2d5016;
+ background: #ff7b001a; /*envianos un mensaje*/
  padding: 3rem;
  border-radius: 12px;
  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -141,7 +137,7 @@
 .form-group textarea:focus {
  outline: none;
  border-color: var(--primary-color);
- box-shadow: 0 0 0 3px rgba(52, 168, 83, 0.1);
+ box-shadow: 0 0 0 3px rgba(248, 255, 250, 0.1);
 }
 /***************************************************/
 /*caja para enviar mensaje*/
@@ -150,9 +146,10 @@
  min-height: 120px;
 }
 
-/* Locations Section */
+/* Nuestras Ubicaciones*/
 .locations-section {
  padding: 4rem 0;
+ color: #2d5016; /*EDITADO*/
  background: #ff7b001a; /*EDITADO*/
 }
 
@@ -180,7 +177,7 @@
 }
 /*********************************/
 .location-card {
- background: white; /*fondo cartas de ubicacion de los locales*/
+ background: var(--light-green); /*fondo cartas de ubicacion de los locales*/
  border-radius: 12px;
  overflow: hidden;
  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
