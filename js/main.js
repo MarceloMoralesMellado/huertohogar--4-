@@ -48,7 +48,7 @@ class HuertoHogar {
     const loginBtn = document.getElementById("loginBtn")
     if (loginBtn) {
       loginBtn.addEventListener("click", () => {
-        this.showLogin()
+        
       })
     }
 
